@@ -30,11 +30,11 @@ function App() {
   const delMinion = () => setData(data.slice(0, -1));
   return (
     <Card>
-      <Button isLoding={true} ondClick={addMinion}>
+      <Button isLoading={true} ondClick={addMinion}>
         {" "}
         Agregar{" "}
       </Button>
-      <Button isLoding={false} ondClick={delMinion}>
+      <Button isLoading={false} ondClick={delMinion}>
         {" "}
         Eliminar{" "}
       </Button>

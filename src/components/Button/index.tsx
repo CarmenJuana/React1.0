@@ -20,18 +20,18 @@ const Btn = styled.button<BtnProps>`
 `;
 type Props = {
   children: ReactNode;
-  isLoding?: boolean;
+  isLoading?: boolean;
   ondClick: () => void;
 };
 
-function Button({ children, isLoding, onClick }: Props) {
+function Button({ children, isLoading, ondClick }: Props) {
   return (
     // <button
     //  onClick={ondClick}
     // disabled={isLoding}
     // type="button"
-    <Btn onClick={onClick} disabled={isLoding} isLoading={isLoding}>
-      {isLoding ? "Cargando...." : children}
+    <Btn onClick={ondClick} disabled={isLoading} type="button">
+      {isLoading ? "Cargando...." : children}
     </Btn>
   );
 }
